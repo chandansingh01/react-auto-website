@@ -1,0 +1,22 @@
+@import "./variables";
+
+.heading_with_sub {
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom:32px;
+    &::before {
+      content: "";
+      display: block;
+      color: $primary-red;
+      border: 0.01em solid $primary-red;
+      max-width: 144px;
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

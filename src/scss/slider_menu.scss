@@ -1,0 +1,62 @@
+@import "../scss/variables";
+.slider_menu {
+  background: $slider_menu_light_grey;
+  height: 54px;
+  box-shadow: 1px 2px 3px 0px #bbb9b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  .arrow {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      color: $black;
+      text-align: center;
+      text-decoration: none;
+      margin-left: 16px;
+      margin-right: 16px;
+      font-size: 16px;
+    }
+
+    .active {
+      font-weight: bold;
+      &::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: black;
+        margin-top:5px;
+        border-radius: 4px;
+        
+      }
+    }
+
+    a:hover {
+      &::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: black;
+            margin-top:5px;
+            border-radius: 4px;
+            
+          }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import './variables';
+
+.side-image-card {
+      display: flex;
+      align-items: center;
+      flex: 1 0 50%;
+      .card-content{
+            padding: 16px;
+      }
+      
+      .demo-image {
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            background-color: $light_grey;
+            
+      }
+      h3 {
+            font-size: 18px;  
+            font-weight: bold;          
+      }
+      h4 {
+            font-size: 16px;
+            font-weight: 300;
+      }
+      @media (max-width: $mobile-breakpoint) {
+            flex: 1 0 100%;
+          
+          }
+}

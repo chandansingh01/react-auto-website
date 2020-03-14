@@ -1,0 +1,48 @@
+@import './variables';
+
+.car-search{
+      
+      .content{
+            padding: 32px;
+            background-color:$light_background ;
+            h1{
+                  font-size: 28px;
+                  font-weight: bold;
+                  text-transform: capitalize;
+                  margin: 0;
+            }
+            h2 {
+                  font-size: 18px;
+                  font-weight: lighter;
+                  margin-bottom: 24px;
+            }
+            .highlight {
+                  color: $primary-red;
+                  font-weight: bold;
+            }
+      }
+      .footer {
+            background: $black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 24px;
+            text-align: center;
+            text-transform: capitalize;
+            
+            .details {
+                  width: 120px;
+                  .heading {
+                        font-size: 24px;
+                        color: $white;
+                        font-weight: 400;
+                  }
+                  .sub-heading {
+                        font-size: 14px ;
+                        color: $light_grey;
+                        text-align: center;
+                        
+                  }
+            }
+      }
+}

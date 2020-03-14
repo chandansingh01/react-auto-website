@@ -1,0 +1,25 @@
+@import '../variables';
+
+.section_services {
+  .services-type-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+    .services-type-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      margin: 8px;
+      flex: 1 0 20%; 
+      height: 120px;
+      padding: 8px;
+      background-color: $light_grey;     
+
+      @media (max-width:$mobile-breakpoint)  {
+        flex: 1 0 25%; 
+      }
+    }
+  }
+}
